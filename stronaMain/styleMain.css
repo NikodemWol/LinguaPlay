@@ -5,8 +5,60 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to bottom right, rgb(73, 105, 137), rgb(88, 163, 153)), linear-gradient(to bottom left, rgb(73, 105, 137), rgb(88, 163, 153));
 
     height: 100vh;
+}
+#napisAutorzy{
+    margin: 0px;
+}
+.imiona{
+    margin: 0px;
+}
+.divautorzy{
+    top: 0%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10px;
+    width: 200px;
+    margin: 20px;
+    position: absolute;
+    color: rgb(168, 205, 159);
+}
+.authors{
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 600px;
+    margin: 0px;
+    color: rgb(168, 205, 159);
+}
+.tutorial{
+    background-color: rgb(226, 244, 197);
+    border: none;
+    border-radius: 10px;
+    color: rgb(73, 105, 137);
+    width: 80px;
+    height: 30px;
+    margin: 10px;
+    position: relative;
+}
+@keyframes rozszerzenieTutorialu{
+    0%{    width: 80px;
+        height: 30px;}
+    100%{    width: 82.5px;
+        height: 32.5px;
+        margin: 9px;}
+}
+.tutorial:hover{
+    background-color: rgb(183, 201, 153);
+    animation: rozszerzenieTutorialu 0.2s forwards;
 }
 .clearJson{
     position: fixed;
@@ -15,20 +67,34 @@ body{
 }
 .pomoc{
     text-align: center;
+    margin: 2px;
 }
 .imie{
     font-weight: 1000;
+    margin: 0px;
 }
-.divPrzedstawienie{
+.divPrzedstawienie1{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 200px;
     width: 600px;
-    margin: 90px;
-    position: fixed;
+    margin: 0px;
+    position: absolute;
+    top: 10%;
+    color: rgb(226, 244, 197);
+}
+.divPrzedstawienie{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 600px;
+    margin: 0px;
+    position: relative;
     top: 0%;
-    color: rgb(168, 205, 159);
+    color: rgb(226, 244, 197);
 
 }
