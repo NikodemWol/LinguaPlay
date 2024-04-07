@@ -4,4 +4,6 @@ clearJson.addEventListener('click', function(){
 })
 const imie= localStorage.getItem('name')
 const czesc=document.body.querySelector('.imie')
+const twojeimie=document.body.querySelector('.imie2')
 czesc.innerText='Hi '+ imie+'!'
+twojeimie.innerText=imie.toUpperCase()
