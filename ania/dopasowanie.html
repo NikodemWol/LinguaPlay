@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<body>
+<html>
+<center><h2 id = "tekst">jablko</h2></center>
+<center><h4 id = "licznik">0</h4></center>
+<center><button id = "jablko" name = "jablko" onclick="funkcjaJablko()">APPLE</button>
+    <button id = "pomarancza" name = "pomarancza" onclick="funkcjaJablko()">ORANGE</button></center>
+<center><button id = "banan" name = "banan" onclick="funkcjaJablko()">BANANA</button>
+    <button id = "gruszka" name = "gruszka" onclick="funkcjaJablko()">PEAR</button></center>
+<center><button id = "pomidor" name = "pomidor" onclick="funkcjaJablko()">TOMATO</button>
+    <button id = "ogórek" name = "ogórek" onclick="funkcjaJablko()">CUCUMBER</button></center>
+<p id = "test2"></p>
+<script>
+    function funkcjaJablko() {
+    
+        var y = document.getElementById("tekst").textContent;
+        var x = document.getElementById("jablko").name;
+        var l = Number(document.getElementById("licznik").textContent)
+        if (x === y) {
+            document.getElementById("licznik").innerHTML = l+1;
+        }
+        
+        document.getElementById("tekst").textContent = "pear";
+    }
+</script>
+
+
+</html>
+</body>
