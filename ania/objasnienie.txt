@@ -1,0 +1,11 @@
+GRA - DOPASOWYWANIE
+można by to zrobić bazując na tekście i przyciskach
+
+wyświetla się słówko po polsku (tekst)
+przyciski ze słówkami po angielsku
+po kliknięciu zmienia się tekst . jeżeli został kliknięty odpowiedni przycisk: licznik +1
+gra konczy sie gdy koniec listy słówek
+
+
+1. licznik ile uzytkownik zgadnal
+2. na koncu wynik ile zgadnal/liczba slowek
