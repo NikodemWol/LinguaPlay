@@ -1,0 +1,25 @@
+.szafa{
+    margin: auto;
+    width: 800px;
+    height: auto;
+    
+}
+.szafa img{
+    width: 100%;
+    height: 100%;
+}
+/*teoretycznie te 2 kody powinny sprawiać że div jest tej samej wielkości co szafa */
+.image-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .wystawa {
+            position: absolute;
+        }
+        body {
+            font-family: 'Madimi One', cursive;
+        }
+.wystawa {
+    position: absolute;
+}

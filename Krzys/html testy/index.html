@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrazek z punktami</title>
+    <style>
+        .image-container {
+        text-align: center;
+     }
+     .image-container img {
+        width: 50%;
+        height: auto;
+        
+     }
+     .szafa img {
+            width: 70%; /* Szerokość szafy - 70% szerokości kontenera */
+            height: auto;
+            position: relative; /* Dodatkowa pozycja relative dla obrazka szafy */
+            left: -15%; /* Przesunięcie szafy dalej na lewo o 15% szerokości kontenera */
+        }
+     .wystawa {
+            position: absolute;
+        }
+        body {
+            font-family: 'Madimi One', cursive;
+        }
+        
+    </style>
+     <link rel="stylesheet" href="ustawienia.css">
+     
+</head>
+<body bgcolor="A8CD9F">
+
+    <h1>Punkty: <span id="punkty" style="color: #496989;">0</span></h1>
+    <div class="image-container">
+        <div class="szafa">
+            <img src="szafa.png"  style="width: 100%;" alt="Szafa">>
+        </div>
+        <img src="marchewka.png" class="wystawa" style="top: 50px; left: 20px;">
+        <img src="48.png" class="wystawa" style="top: 100px; left: 100px;">
+    </div>
+    <script src="guzik.js"></script>
+</body>
+</html>
+
+</html>
