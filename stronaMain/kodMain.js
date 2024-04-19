@@ -15,7 +15,6 @@ function klikniecieustawien(){
 
 x.addEventListener('click', kliknieciex)
 ustawienia.addEventListener('click', klikniecieustawien)
-muzyka.play()
 
 const clearJson=document.body.querySelector('.clearJson')
 clearJson.addEventListener('click', function(){
@@ -26,4 +25,20 @@ const czesc=document.body.querySelector('.imie')
 const twojeimie=document.body.querySelector('.imie2')
 czesc.innerText='Hi '+ imie+'!'
 twojeimie.innerText=imie.toUpperCase()
-muzyka.volume=1
+muzyka.volume=localStorage.getItem('poziom_glosnosci')/1000
+
+
+// ustawienia ponizej
+const wlaczmuzyke=document.querySelector('.wlaczmuzyke')
+const poziom_glosnosci=document.querySelector('.poziom_glosnosci')
+
+poziom_glosnosci.oninput=function(e){
+    localStorage.setItem('poziom_glosnosci', e.target.value);
+    muzyka.volume=localStorage.getItem('poziom_glosnosci')/1000
+    console.log(localStorage.getItem('poziom_glosnosci')/1000);
+}
+
+wlaczmuzyke.oninput=function(e){
+    muzyka.play()
+    e.target.parentNode.classList.add('hidden');
+}   
