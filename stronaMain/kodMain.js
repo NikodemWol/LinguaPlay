@@ -28,15 +28,20 @@ twojeimie.innerText=imie.toUpperCase()
 muzyka.volume=localStorage.getItem('poziom_glosnosci')/1000
 
 
-// ustawienia ponizej
+// ustawienia glosnosci ponizej
 const wlaczmuzyke=document.querySelector('.wlaczmuzyke')
-const poziom_glosnosci=document.querySelector('.poziom_glosnosci')
+let poziom_glosnosci=document.querySelector('.poziom_glosnosci')
 
 poziom_glosnosci.oninput=function(e){
     localStorage.setItem('poziom_glosnosci', e.target.value);
     muzyka.volume=localStorage.getItem('poziom_glosnosci')/1000
-    console.log(localStorage.getItem('poziom_glosnosci')/1000);
 }
+
+
+if(localStorage.getItem('poziom_glosnosci')!=null){
+    poziom_glosnosci.value=localStorage.getItem('poziom_glosnosci')/1
+}
+
 
 wlaczmuzyke.oninput=function(e){
     muzyka.play()
@@ -68,3 +73,33 @@ function gra3(){
 }
 
 przycisk3.addEventListener('click', gra3)
+
+// zmiana jezyka ponizej
+const elementy_napisane_ang = document.querySelectorAll('.ang')
+const elementy_napisane_pol = document.querySelectorAll('.pol')
+const zmiana_jezyka = document.querySelector('#checkbox')
+
+
+zmiana_jezyka.oninput=function(){
+    localStorage.setItem('Jezyk', zmiana_jezyka.checked)
+    if(localStorage.getItem('Jezyk')==='true'){
+        elementy_napisane_ang.forEach(element=>element.style.display='block')
+        elementy_napisane_pol.forEach(element=>element.style.display='none')
+    } else{
+        elementy_napisane_pol.forEach(element=>element.style.display='block')
+        elementy_napisane_ang.forEach(element=>element.style.display='none')
+    }
+}
+
+if(localStorage.getItem('Jezyk')!=null){
+    zmiana_jezyka.checked=localStorage.getItem('Jezyk')==='true'
+}
+
+
+if(localStorage.getItem('Jezyk')==='true'){
+    elementy_napisane_ang.forEach(element=>element.style.display='block')
+    elementy_napisane_pol.forEach(element=>element.style.display='none')
+} else{
+    elementy_napisane_pol.forEach(element=>element.style.display='block')
+    elementy_napisane_ang.forEach(element=>element.style.display='none')
+}

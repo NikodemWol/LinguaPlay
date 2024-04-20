@@ -453,3 +453,7 @@ body{
 #kolor4{
     color: rgb(226, 244, 197);
 }
+
+.ang{
+    display: none;
+}
