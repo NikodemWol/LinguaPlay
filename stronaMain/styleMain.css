@@ -191,13 +191,40 @@ body{
 }
 .gra1, .gra2, .gra3{
     margin: 10px;
-    border: solid black 3px;
     height: 90%;
     width: 30%;
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.gra1,.gra3{
+    border: rgb(168, 205, 159) solid 3px;
+    background-color: rgb(226, 244, 197);
+    color: rgb(168, 205, 159);
+}
+.gra2{
+    border: rgb(226, 244, 197) solid 3px;
+    background-color: rgb(168, 205, 159);
+    color: rgb(226, 244, 197);
+}
+#przeniesc_do_gry1, #przeniesc_do_gry2, #przeniesc_do_gry3{
+    width: 70%;
+    border-radius: 5px;
+    height: 30%;
+}
+#przeniesc_do_gry1, #przeniesc_do_gry3{
+    border: rgb(168, 205, 159) solid 3px;
+    background-color: rgb(168, 205, 159);
+    color: rgb(226, 244, 197);
+}
+#przeniesc_do_gry2{
+    border: rgb(226, 244, 197) solid 3px;
+    background-color: rgb(226, 244, 197);
+    color: rgb(168, 205, 159);
+}
+#przeniesc_do_gry1, #przeniesc_do_gry2, #przeniesc_do_gry3:hover{
+    cursor: pointer;
 }
 
 

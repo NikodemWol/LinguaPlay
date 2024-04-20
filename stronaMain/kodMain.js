@@ -42,3 +42,29 @@ wlaczmuzyke.oninput=function(e){
     muzyka.play()
     e.target.parentNode.classList.add('hidden');
 }   
+
+// przyciski do gier ponizej
+const przycisk1 = document.querySelector('#przeniesc_do_gry1')
+const przycisk2 = document.querySelector('#przeniesc_do_gry2')
+const przycisk3 = document.querySelector('#przeniesc_do_gry3')
+
+
+function gra1(){
+    window.location.href='../Nikodem/indexGraNikodem.html'
+}
+
+przycisk1.addEventListener('click', gra1)
+
+
+function gra2(){
+    window.location.href='../ania/dopasowanie.html'
+}
+
+przycisk2.addEventListener('click', gra2)
+
+
+function gra3(){
+    window.location.href='../Krzys/html testy/index.html'
+}
+
+przycisk3.addEventListener('click', gra3)
