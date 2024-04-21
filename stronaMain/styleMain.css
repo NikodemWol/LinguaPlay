@@ -214,12 +214,12 @@ body{
     height: 30%;
 }
 #przeniesc_do_gry1, #przeniesc_do_gry3{
-    border: rgb(168, 205, 159) solid 3px;
+    border: none;
     background-color: rgb(168, 205, 159);
     color: rgb(226, 244, 197);
 }
 #przeniesc_do_gry2{
-    border: rgb(226, 244, 197) solid 3px;
+    border: none;
     background-color: rgb(226, 244, 197);
     color: rgb(168, 205, 159);
 }
