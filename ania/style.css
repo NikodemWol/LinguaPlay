@@ -1,0 +1,45 @@
+body {
+    height: 100%;
+    color: #496989;
+    background-image: linear-gradient( #E2F4C5, #A8CD9F);
+        font-family: "Madimi One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+}
+html {
+    height: 100%
+}
+p.instrukcja {
+    background-color: #A8CD9F;
+    border-style: double;
+    border-color: #496989;
+    border-width: 5px;
+    height: 25px;
+    color: #496989
+}
+button {
+    background-color: #58A399;
+    border: 5px solid #496989;
+    color: #E2F4C5;
+    text-align: center;
+    font-size: 24px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    margin: 5px 5px;
+    cursor: pointer;
+
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+button:hover {
+    background-color: #A8CD9F
+}
+
+button:disabled {
+    background-color: #496989;
+    color: #496989;
+}
+
+
+  
