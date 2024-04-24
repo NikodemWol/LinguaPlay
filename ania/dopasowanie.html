@@ -1,16 +1,78 @@
 <!DOCTYPE html>
-<body>
 <html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<center><h3><p class="instrukcja">Dopasuj słówka do wyświetlanego tekstu. MASZ TYLKO JEDNĄ SZANSĘ!</p></h3></center>
+
+
 <center><h2 id = "tekst">jablko</h2></center>
-<center><h4 id = "licznik">0</h4></center>
-<center><button id = "jablko" name = "jablko" onclick="funkcjaJablko()">APPLE</button>
-    <button id = "pomarancza" name = "pomarancza" onclick="funkcjaJablko()">ORANGE</button></center>
-<center><button id = "banan" name = "banan" onclick="funkcjaJablko()">BANANA</button>
-    <button id = "gruszka" name = "gruszka" onclick="funkcjaJablko()">PEAR</button></center>
-<center><button id = "pomidor" name = "pomidor" onclick="funkcjaJablko()">TOMATO</button>
-    <button id = "ogórek" name = "ogórek" onclick="funkcjaJablko()">CUCUMBER</button></center>
+<center><h2 id = "licznik">0</h2></center>
+<center><button id = "jablko" name = "jablko" onclick="doDopasowania(id)">APPLE</button>
+    <button id = "pomarancza" name = "pomarancza" onclick="doDopasowania(id)">ORANGE</button></center>
+
+<center><button id = "banan" name = "banan" onclick="doDopasowania(id)">BANANA</button>
+    <button id = "gruszka" name = "gruszka" onclick="doDopasowania(id)">PEAR</button></center>
+
+<center><button id = "mango" name = "mango" onclick="doDopasowania(id)">MANGO</button>
+    <button id = "cytryna" name = "cytryna" onclick="doDopasowania(id)">LEMON</button></center>
+
+<center><button id = "kokos" name = "kokos" onclick="doDopasowania(id)">COCONUT</button>
+    <button id = "sliwka" name = "sliwka" onclick="doDopasowania(id)">PLUM</button></center>
+
+<center><button id = "jagoda" name = "jagoda" onclick="doDopasowania(id)">BERRY</button>
+    <button id = "malina" name = "malina" onclick="doDopasowania(id)">RASPBERRY</button></center>
+
+<center><button id = "figa" name = "figa" onclick="doDopasowania(id)">FIG</button>
+    <button id = "daktyl" name = "daktyl" onclick="doDopasowania(id)">DATE</button></center>
+
 <p id = "test2"></p>
+
 <script>
+
+    let owoce = ["pomarancza", "banan", "gruszka", "mango", "cytryna", "kokos", "sliwka", "jagoda", "malina", "figa", "daktyl"];
+    const naIle = owoce.length+1
+    let ile = owoce.length+1
+    
+    function doDopasowania(e) {
+        var x = String(e)
+        var y = document.getElementById("tekst").textContent;
+        var l = Number(document.getElementById("licznik").textContent)
+        if (x === y) {
+            document.getElementById("licznik").innerHTML = l+1; }
+        let wylosowanyIndex = Math.floor(Math.random()*owoce.length)
+        let wylosowany = owoce[wylosowanyIndex]
+        document.getElementById("tekst").textContent = wylosowany;
+        //owoce.splice(owoce.indexOf(x), 1);
+        owoce.splice(wylosowanyIndex, 1);
+        ile = ile-1;
+        // czy koniec gry
+        if (ile === 0){
+            document.getElementById("tekst").textContent = "KONIEC GRY";
+            let wiadomosc = "Wynik:"+String(l)+"/"+String(naIle);
+            document.getElementById("licznik").textContent = wiadomosc;
+
+            document.getElementById("jablko").disabled = true;
+            document.getElementById("pomarancza").disabled = true;
+            document.getElementById("banan").disabled = true;
+            document.getElementById("gruszka").disabled = true;
+            document.getElementById("mango").disabled = true;
+            document.getElementById("cytryna").disabled = true;
+            document.getElementById("kokos").disabled = true;
+            document.getElementById("sliwka").disabled = true;
+            document.getElementById("jagoda").disabled = true;
+            document.getElementById("malina").disabled = true;
+            document.getElementById("figa").disabled = true;
+            document.getElementById("daktyl").disabled = true;
+            
+
+        }
+
+
+    }
+
     function funkcjaJablko() {
     
         var y = document.getElementById("tekst").textContent;
@@ -18,10 +80,13 @@
         var l = Number(document.getElementById("licznik").textContent)
         if (x === y) {
             document.getElementById("licznik").innerHTML = l+1;
+
         }
         
         document.getElementById("tekst").textContent = "pear";
-    }
+        document.getElementById("jablko").disabled = true;
+        }
+        
 </script>
 
 
