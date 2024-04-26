@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gra</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #centered-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 50px;
+            font-size: 20px; 
+            background-color: #A8CD9F; 
+            border: none; 
+            color: black; 
+             }
+
+        html, body {
+            background-color: #E2F4C5; 
+            margin: 0; 
+            padding: 0; 
+            height: 100%; 
+            font-family: "Madimi one";
+        }
+    </style>
+</head>
+<body>
+    
+    <canvas id="canvas1"></canvas>
+    <!--przycisk z napisem "Graj" -->
+    <button id="centered-button" onclick="przeniesDoKolejnejStrony()">Graj</button>
+    <script type="module" src="main.js"></script>
+    <script>
+        function przeniesDoKolejnejStrony() {
+            window.location.href = "index2.html";
+        }
+    </script>
+</body>
+</html>
