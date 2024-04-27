@@ -1,11 +1,5 @@
 GRA - DOPASOWYWANIE
-można by to zrobić bazując na tekście i przyciskach
+Gra polega na dopasowaniu polskiego tłumaczenia do angielskich słówek.
 
-wyświetla się słówko po polsku (tekst)
-przyciski ze słówkami po angielsku
-po kliknięciu zmienia się tekst . jeżeli został kliknięty odpowiedni przycisk: licznik +1
-gra konczy sie gdy koniec listy słówek
-
-
-1. licznik ile uzytkownik zgadnal
-2. na koncu wynik ile zgadnal/liczba slowek
+Po rozpoczęciu gry użytkownik naciska odpowiedni przycisk do wyświetlanego słówka po polsku. Na każde ma on tylko jedną szansę - dane słówko zostanie wyświetlone tylko raz.
+Po wyczerpaniu puli, przyciski blokują się i wyświetlany jest wynik (ilość dobrze dobranych słówek na ilość słówek w puli ogółem.)
