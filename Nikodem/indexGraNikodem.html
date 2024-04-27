@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Riot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../stronaMain/zdjecia/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="zdjecia/favicon.ico">
 </head>
 <body>
-    
+    <div class="divstartu">
+        <button class="start kolor2bg"><h3 class="kolor1napis">Start</h3></button>
+    </div>
+
+    <div class="hidden glownydiv kolor2bg kolor1napis">
+        <div class="timer"><h2 class="wyswietlacztimera">59s</h2></div>
+        <div class="licznik"></div>
+        <div class="slowodotlumaczenia"></div>
+        <div class="miejscewpisywania"><form action=""><input class="inputwpisywania kolor3bg" type="text" placeholder="Przetłumacz słowo/Translate the word"></form></div>
+    </div>
+    <div class="koniec hidden kolor3bg kolor1napis"><h1 class="wygranaczynie"></h1><button class="wrocdolobby kolor2bg pol">Wroc do glownego menu</button><button class="wrocdolobby ang kolor2bg">Go back to the main menu</button></div>
+    <script src="kod.js"></script>
 </body>
 </html>
