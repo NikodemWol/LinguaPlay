@@ -3,7 +3,21 @@ const x = document.querySelector('.x')
 const ustawieniatlo = document.querySelector('.ustawieniatlo')
 const ustawienia = document.querySelector('.ust')
 const imie= localStorage.getItem('name')
+const wrocdomenu=document.querySelector('.wrocdomenu')
+const menututorialu=document.querySelector('.menututorialu')
+const tutorial = document.querySelector('.tutorial')
 
+function wracamy(){
+    menututorialu.classList.add('hidden')
+}
+
+wrocdomenu.addEventListener('click', wracamy)
+
+function otworztutorial(){
+    menututorialu.classList.remove('hidden')
+}
+
+tutorial.addEventListener('click', otworztutorial)
 
 function kliknieciex(){
     ustawieniatlo.classList.add('hidden')

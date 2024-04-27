@@ -436,6 +436,15 @@ body{
 .jezyk{
     display: flex;
 }
+.menututorialu{
+    
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url(zdjecia/tutorialzdjecie.png);
+    background-repeat: no-repeat;
+}
+
 .wlaczmuzyke{
     width: 30px;
     height: 30px;
@@ -444,6 +453,20 @@ body{
     border-radius: 50%; 
     background: rgb(168, 205, 159); 
     cursor: pointer; 
+}
+.wrocdomenu {
+    z-index: 100;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    background-color: rgb(168, 205, 159);
+    color: rgb(88, 163, 153);
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+.wrocdomenu:hover{
+    cursor: pointer;
 }
 .glosnik{
     position: absolute;
