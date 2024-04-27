@@ -83,7 +83,7 @@ przycisk2.addEventListener('click', gra2)
 
 
 function gra3(){
-    window.location.href='../Krzys/html testy/index.html'
+    window.location.href='../Krzys/html testy/test.html'
 }
 
 przycisk3.addEventListener('click', gra3)
